@@ -24,8 +24,8 @@ create table listing (
     description text,
     status varchar,
     car_id integer,
-    model_id integer,
-    year_id integer,
+    model_id integer
+    
    
 );
 
@@ -66,7 +66,6 @@ drop table users;
 drop table email_lead;
 drop table listing;
 drop table car_type;
-drop table car_year;
 drop table car_model;
 drop table car_make;
 -- inserting data for database
