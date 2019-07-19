@@ -2,6 +2,7 @@ require('dotenv').config()
 express = require('express')
 session = require('express-session')
 massive = require('massive')
+const Controller = require('./Controller')
 const {SERVER_PORT,CONNECTION_STRING,SESSION_SECRET} = process.env
 
 
