@@ -1,4 +1,6 @@
 {
+  "proxy": "http://localhost:4046",
+  "main": "server/index.js",
   "name": "dealership",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +29,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:4040"
+  }
 }
