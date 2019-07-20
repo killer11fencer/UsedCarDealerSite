@@ -1,4 +1,9 @@
 module.exports = {
+    getListing: (req,res) => {
+        const db = req.app.get('db');
+        db.getListing().then(result => res.status(200).send(result))
+        .catch(err => console.log('err on get listing',err))
+    },
     getMake: (req,res) => {
         const db = req.app.get('db');
         db.getMake().then(result => res.status(200).send(result))
