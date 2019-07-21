@@ -14,3 +14,5 @@ massive(CONNECTION_STRING).then(db => {
     console.log(`DATABASE: Connected`);
     app.listen(SERVER_PORT,()=>console.log('listening on Port',SERVER_PORT))
 }).catch(err => console.log('err on db',err))
+
+app.get('/api/recentlysold')
