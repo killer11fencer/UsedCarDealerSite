@@ -30,6 +30,14 @@ render() {
         <h4>{car.price}</h4>
         </div>
     })
+    let displayNew = this.state.recentlySold.map((car,id)=>{
+        return <div key={id}>
+        <h4>{car.make}</h4>
+        <h4>{car.model}</h4>
+        <h4>{car.status}</h4>
+        <h4>{car.price}</h4>
+        </div>
+    })
     return (
         <div>
             <h1>Vash Auto</h1>
