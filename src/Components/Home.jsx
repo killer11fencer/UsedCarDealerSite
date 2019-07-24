@@ -43,6 +43,7 @@ render() {
             <h1>Vash Auto</h1>
             <h5>Introduction</h5>
             <h5>New Inventory</h5>
+            {displayNew}
             <h5>Recently Sold</h5>
             {displaySold}
             <h5>View Our Inventory</h5>
