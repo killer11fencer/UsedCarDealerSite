@@ -13,7 +13,7 @@ class Inventory extends Component {
         this.getInventory()
     }
     getInventory = () => {
-        axios.get('/api/inventroy').then(res=> this.setState({inventory:res.data}))
+        axios.get('/api/inventoryy').then(res=> this.setState({inventory:res.data}))
         .catch(err => console.log('err on inventory',err))
     }
 }
