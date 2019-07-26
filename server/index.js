@@ -16,3 +16,7 @@ massive(CONNECTION_STRING).then(db => {
 }).catch(err => console.log('err on db',err))
 
 app.get('/api/recentlysold',Controller.getSold)
+
+// Login
+app.post('/api/user',Controller.loginUser)
+

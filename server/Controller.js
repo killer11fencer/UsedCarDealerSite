@@ -20,4 +20,7 @@ module.exports = {
         db.getModel({make_id}).then(result => res.status(200).send(result))
         .catch(err => console.log('err on models',err))
     },
+    login: (req,res) => {
+        const {email,password} = req.body
+    }
 }
