@@ -9,8 +9,18 @@ class Register extends Component {
             last_name: '',
             email: '',
             password: '',
-            confirm_password:''
+            confirm_password:'',
+            error_password: false,
+            error_message: 'Password does not match, please try again'
         }
     }
-    
+handleChange = (e) => {
+    this.setState({[e.target.name]:e.target.value})
+}
+handleSubmit = () => {
+    if(this.state.password === this.state.confirm_password && this.state.password.length > 1) {
+        axios.post('/api/register',)
+    }
+}
+
 }
