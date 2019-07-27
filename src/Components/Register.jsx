@@ -18,8 +18,10 @@ handleChange = (e) => {
     this.setState({[e.target.name]:e.target.value})
 }
 handleSubmit = () => {
+    
     if(this.state.password === this.state.confirm_password && this.state.password.length > 1) {
-        axios.post('/api/register',)
+        const {first_name,last_name,email,password,confirm_password} = this.state
+        axios.post('/api/register',{first_name,last_name,email,password,confirm_password})
     }
 }
 
