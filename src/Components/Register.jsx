@@ -17,6 +17,13 @@ class Register extends Component {
 handleChange = (e) => {
     this.setState({[e.target.name]:e.target.value})
 }
+handleCancel = () => {
+    this.setState({first_name: '',
+    last_name: '',
+    email: '',
+    password: '',
+    confirm_password:'',})
+}
 handleSubmit = () => {
     
     if(this.state.password === this.state.confirm_password && this.state.password.length > 1) {
@@ -30,11 +37,15 @@ render() {
             <h5>First Name</h5>
             <input name='first_name' onChange={this.handleChange} value={this.state.first_name}/>
             <h5>Last Name</h5>
+            <input name='last_name' onChange={this.handleChange} value={this.state.last_name}/>
             <h5>Email</h5>
+            <input name='email' onChange={this.handleChange} value={this.state.email}/>
             <h5>Password</h5>
+            <input name='password' onChange={this.handleChange} value={this.state.password}/>
             <h5>Confirm Password</h5>
-            <button>Submit</button>
-            <button>Cancel</button>
+            <input name='confirm_password' onChange={this.handleChange} value={this.state.confirm_password}/>
+            <button onClick={this.handleSubmit}>Submit</button>
+            <button onClick={this.handleCancel}>Cancel</button>
         </div>
     )
 }
