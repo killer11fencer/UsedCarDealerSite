@@ -12,6 +12,9 @@ class Request extends Component {
         model:'',
         miles: [],
     }
+    handleChange = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
 render () {
     return (
         <div>
