@@ -14,6 +14,7 @@ class Request extends Component {
     }
     handleChange = (e) => {
         this.setState({[e.target.name]: e.target.value})
+        if()
     }
 render () {
     return (
