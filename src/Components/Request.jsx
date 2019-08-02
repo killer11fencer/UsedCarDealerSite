@@ -10,7 +10,7 @@ class Request extends Component {
         price_range: [],
         make: '',
         model:'',
-        miles: [],
+        miles: []
     }
     handleChange = (e) => {
         this.setState({[e.target.name]: e.target.value})
@@ -25,3 +25,5 @@ render () {
     )
 }
 }
+
+export default Request
