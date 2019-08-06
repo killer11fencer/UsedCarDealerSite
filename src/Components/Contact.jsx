@@ -5,6 +5,9 @@ class Contact extends Component {
         super();
         this.state = {
             referrals: []
+
         }
     }
 }
+
+export default Contact
