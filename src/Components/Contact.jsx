@@ -7,6 +7,14 @@ class Contact extends Component {
             referrals: []
 
         }
+
+    }
+    render() {
+        return (
+            <div>
+                <h1>Referrals</h1>
+            </div>
+        )
     }
 }
 
