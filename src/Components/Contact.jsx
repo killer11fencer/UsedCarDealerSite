@@ -10,6 +10,9 @@ class Contact extends Component {
 
     }
     render() {
+        let displayReferral = this.state.referrals.map((ref,id) => {
+            return <div>{ref.title}</div>
+        })
         return (
             <div>
                 <h1>Referrals</h1>
