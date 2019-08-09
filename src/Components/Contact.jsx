@@ -16,6 +16,7 @@ class Contact extends Component {
         return (
             <div>
                 <h1>Referrals</h1>
+                <input></input>
             </div>
         )
     }
