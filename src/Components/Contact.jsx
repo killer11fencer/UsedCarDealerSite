@@ -17,6 +17,9 @@ class Contact extends Component {
             <div>
                 <h1>Referrals</h1>
                 <input></input>
+                <section>
+                    <article></article>
+                </section>
             </div>
         )
     }
